@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Spectar</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            line-height: 1.6;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Section */
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0;
+        }
+
+        .header_logo {
+            color: white;
+            font-family: Georgia, serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hamburger {
+            display: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        #Get_in_touch {
+            background-color: yellow;
+            border: none;
+            text-decoration: none;
+            color: black;
+            padding: 12px 20px;
+            font-family: Georgia, serif;
+            font-weight: bold;
+        }
+
+        /* Sub Header Section */
+        h1 {
+            color: white;
+            margin: 40px 0 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 48px;
+            line-height: 1.2;
+        }
+
+        p {
+            color: white;
+            margin: 5px 0;
+            padding-bottom: 15px;
+        }
+
+        .hero_description {
+            max-width: 520px;
+        }
+
+        /* Logo Brand Grid */
+        .logo {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 50px;
+            margin: 20px 0;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo img {
+            height: 25px;
+        }
+
+        /* About Section */
+        .abouts_section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 20px 0;
+        }
+
+        .about {
+            color: white;
+        }
+
+        .about img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .about h3 {
+            font-size: 25px;
+            margin-bottom: 10px;
+            font-family: Georgia, serif;
+        }
+
+        /* Co-founder Section */
+        .founder {
+            background-color: darkgray;
+            padding: 40px 0;
+            margin-top: 40px;
+        }
+
+        .founder_inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .sub_founder {
+            font-size: 18px;
+            color: black;
+        }
+
+        .sub_founder h3 {
+            font-family: Georgia, serif;
+            font-size: 25px;
+            margin-bottom: 15px;
+            color: black;
+        }
+
+        .sub_founder p {
+            color: black;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 60px 0;
+        }
+
+        .contact h3 {
+            font-size: 25px;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .contact p {
+            color: white;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .contact a {
+            color: black;
+            padding: 12px 20px;
+            background: yellow;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        /* Footer */
+        .footer {
+            background: #222;
+            color: white;
+            padding: 30px 0;
+        }
+
+        .footer_inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .socials {
+            display: flex;
+            gap: 15px;
+        }
+
+        .socials img {
+            height: 22px;
+        }
+
+        /* Media Query for Screen Sizes 768px to 1024px (Tablets) */
+        @media (min-width: 320px) and (max-width: 480px) {
+            .links,
+            #header #Get_in_touch {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+
+            .abouts_section,
+            .founder_inner {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header id="header">
+            <div class="header_logo">Jonathan Spectar</div>
+
+            <!-- Anchor Links Section -->
+            <nav class="links">
+                <a href="articles.html">Articles</a>
+                <a href="chats.html">Chats</a>
+                <a href="awards.html">Awards</a>
+                <a href="about.html">About</a>
+            </nav>
+
+            <a href="#contact" id="Get_in_touch">Get in touch</a>
+
+            <div class="hamburger">&#9776;</div>
+        </header>
+
+        <!-- Sub Header Section -->
+        <h1>Helping companies build <br>better, scalable softwares.</h1>
+        <p class="hero_description">Award-winning web developer and author, with over 15+ years of working experience with fortune 500 companies like Apple, Google, Facebook, and more.</p>
+
+        <!-- The Logo Div -->
+        <div class="logo">
+            <img src="Walmart.svg" alt="Walmart">
+            <img src="JP_Morgan.svg" alt="JP Morgan">
+            <img src="Visa.svg" alt="Visa">
+            <img src="Tinder.svg" alt="Tinder">
+            <img src="Samsung.svg" alt="Samsung">
+            <img src="Verizon.svg" alt="Verizon">
+        </div>
+
+        <!-- About Section -->
+        <div class="abouts_section">
+            <div class="about">
+                <img src="img3.jpg" alt="Spense">
+                <h3>Spense.com &rarr;</h3>
+                <p>Rethinking the way writers get paid, an open-source platform designed to help writers focus more on writing, and less on when and how they'll get paid. Project in collaboration with Codewell.cc</p>
+            </div>
+
+            <div class="about">
+                <img src="img6.jpg" alt="YelpCamp">
+                <h3>YelpCamp.com &rarr;</h3>
+                <p>Allowing backpack travelers to perfectly plan their trip through an open-source platform similar to TripAdvisor. With over 1m MAU, YelpCamp has been the crowd's favorite in 2021.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Co-founder Section -->
+    <div class="founder">
+        <div class="container founder_inner">
+            <div class="sub_founder">
+                <h3>A co-founder at one of the world's largest communities.</h3>
+                <p>The combined experience I have working at top Fortune 500 companies has allowed me to develop a skillset that helps me in not just development, but in every aspect of any business.</p>
+                <p>I'm proud to announce that I am now working at one of the world's largest communities, teaching young minds about how to sell yourself as a developer and open them to a whole new world of opportunities.</p>
+            </div>
+
+            <div class="sub_founder">
+                <p>As a developer, you have everything available to you and all that's holding you back is yourself.</p>
+                <p>A quote I live by perfectly illustrates what I mean.</p>
+                <p>"How big would you dream, if you knew you wouldn't fail?" You've already gone through the hardest parts being a developer, it's time to elevate your skills and become a leader in something you're passionate about.</p>
+                <p>I'm happy to chat over coffee some time about how I can help your company.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact" id="contact">
+        <div class="container">
+            <h3>Interested in working with me?</h3>
+            <p>I'm active on all social media platforms listed below but you can also email me and I will get back to you within 24-48 hours.</p>
+            <a href="#">Get in touch</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer_inner">
+            <div>Jonathan Spectar</div>
+
+            <div class="socials">
+                <a href="#"><img src="Twitter.svg" alt="Twitter"></a>
+                <a href="#"><img src="LinkedIn.svg" alt="LinkedIn"></a>
+                <a href="#"><img src="Github.svg" alt="Github"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
